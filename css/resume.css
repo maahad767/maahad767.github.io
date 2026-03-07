@@ -1,0 +1,259 @@
+/* resume.css — Print-optimized, ATS-friendly stylesheet */
+
+/* ── Reset & Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10pt;
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Page container ── */
+.resume {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  padding: 15mm;
+}
+
+/* ── Header ── */
+.resume-header {
+  text-align: center;
+  margin-bottom: 10pt;
+}
+
+.resume-header h1 {
+  font-size: 20pt;
+  font-weight: 700;
+  margin-bottom: 2pt;
+  color: #111;
+}
+
+.resume-header .title {
+  font-size: 12pt;
+  font-weight: 400;
+  margin-bottom: 4pt;
+  color: #333;
+}
+
+.resume-header .contact {
+  font-size: 9pt;
+  color: #444;
+}
+
+.resume-header .contact span + span::before {
+  content: " | ";
+}
+
+/* ── Sections ── */
+.resume-section {
+  margin-top: 10pt;
+}
+
+.resume-section h2 {
+  font-size: 12pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5pt;
+  border-bottom: 1pt solid #333;
+  padding-bottom: 2pt;
+  margin-bottom: 6pt;
+  color: #111;
+}
+
+/* ── Summary ── */
+.summary p {
+  font-size: 10pt;
+  line-height: 1.4;
+}
+
+/* ── Skills ── */
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  font-size: 10pt;
+  margin-bottom: 2pt;
+}
+
+.skills-list li strong {
+  font-weight: 700;
+}
+
+/* ── Experience ── */
+.experience-entry {
+  margin-bottom: 8pt;
+}
+
+.experience-entry .company {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #111;
+}
+
+.experience-entry .location {
+  font-weight: 400;
+  color: #444;
+  font-size: 10pt;
+}
+
+.experience-entry .role-line {
+  font-size: 10pt;
+  margin-top: 1pt;
+}
+
+.experience-entry .role-title {
+  font-style: italic;
+}
+
+.experience-entry .role-date {
+  float: right;
+  font-style: normal;
+  color: #444;
+}
+
+.experience-entry ul {
+  margin-top: 3pt;
+  margin-left: 16pt;
+  padding: 0;
+}
+
+.experience-entry ul li {
+  font-size: 10pt;
+  margin-bottom: 1pt;
+}
+
+/* ── Projects ── */
+.projects-list {
+  list-style: disc;
+  margin-left: 16pt;
+  padding: 0;
+}
+
+.projects-list li {
+  font-size: 10pt;
+  margin-bottom: 2pt;
+}
+
+/* ── Education ── */
+.education-entry {
+  margin-bottom: 4pt;
+}
+
+.education-entry .institution {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #111;
+}
+
+.education-entry .degree {
+  font-size: 10pt;
+  font-style: italic;
+  margin-top: 1pt;
+}
+
+.education-entry .degree-date {
+  float: right;
+  font-style: normal;
+  color: #444;
+}
+
+.education-entry ul {
+  margin-top: 2pt;
+  margin-left: 16pt;
+  padding: 0;
+}
+
+.education-entry ul li {
+  font-size: 10pt;
+  margin-bottom: 1pt;
+}
+
+/* ── Mentorship & Certifications ── */
+.mentorship-list {
+  list-style: disc;
+  margin-left: 16pt;
+  padding: 0;
+}
+
+.mentorship-list li {
+  font-size: 10pt;
+  margin-bottom: 2pt;
+}
+
+/* ── Clearfix for floats ── */
+.role-line::after,
+.degree::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ── Screen-only styles ── */
+@media screen {
+  body {
+    background: #e8e8e8;
+    padding: 20px 0;
+  }
+
+  .resume {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+  }
+}
+
+/* ── Print styles ── */
+@media print {
+  html {
+    font-size: 10pt;
+  }
+
+  body {
+    background: none;
+  }
+
+  .resume {
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+
+  /* Prevent breaking inside entries */
+  .experience-entry,
+  .education-entry {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Page break before Education to create 2-page layout */
+  .page-break-before {
+    page-break-before: always;
+    break-before: always;
+  }
+
+  a {
+    color: #222;
+    text-decoration: none;
+  }
+}
