@@ -119,11 +119,12 @@
                 </div>
               </div>
               <ul class="timeline-bullets">
-                <li>Led Backend Team for Searchify (React + FastAPI) and Banglalink Power (DRF + Django Ninja), both live with growing user bases</li>
+                <li>Designed architecture and led backend team for BL Power — a retailer-focused airtime sales platform with campaigns, offers, and commission management using DRF, MySQL, RabbitMQ, Redis, and Docker</li>
+                <li>Developed BL Wallet — a centralized, fault-tolerant wallet service using Django Ninja with master-slave MySQL, RabbitMQ, and Celery</li>
+                <li>Built BL Backend Utilities Suite including ETL pipelines, Notification Engine (Kafka + CleverTap), Object Uploader (FastAPI + S3), and optimized data migration scripts — migrated 40M records in 1 hour (460GB to 30GB)</li>
+                <li>Designed and implemented Searchify — a dynamic content search platform using FastAPI, Elasticsearch, OpenAI, and React CMS</li>
                 <li>Selected as Employee of the Quarter in 2024</li>
-                <li>Contributed to MyBL project and developed AI/ML POCs including eKYC Verification, Bangla Speech Generation, and LLM-based Data Enrichment</li>
-                <li>Built data processing pipelines and automated reporting using Pandas</li>
-                <li>Worked on JIC (fullstack Django), Tracker23 (NestJS), and Miza Fintech (DRF)</li>
+                <li>Worked on JIC (fullstack Django with Celery, AWS), Tracker23 (NestJS, PostgreSQL, Prisma), and Miza Fintech (DRF)</li>
               </ul>
             </div>
           </div>
@@ -194,8 +195,8 @@
                 </div>
               </div>
               <ul class="timeline-bullets">
-                <li>Migrated Riciwawa app backend to Django REST Framework and GCP</li>
-                <li>Exceeded expectations, recognized with red packet gift for outstanding performance</li>
+                <li>Developed backend for Ricciwawa — a social media app for Chinese learning featuring auto-caption generation, speech-to-text, text-to-speech, and video-to-audio</li>
+                <li>Built from scratch using DRF with GCP services (GAE, Cloud SQL, Speech API, Cloud Storage) and Elastic Search</li>
               </ul>
             </div>
           </div>
@@ -213,7 +214,9 @@
                 </div>
               </div>
               <ul class="timeline-bullets">
-                <li>Built ride sharing application backend using DRF, Django Channels 3, AWS, PostgreSQL, and Redis</li>
+                <li>Designed backend architecture for a ridesharing system using DRF and Django Channels</li>
+                <li>Implemented geometric DB queries for location-based retrieval and custom ride-assigning algorithm</li>
+                <li>Deployed on AWS (EC2, RDS) for scalability</li>
               </ul>
             </div>
           </div>
@@ -231,7 +234,8 @@
                 </div>
               </div>
               <ul class="timeline-bullets">
-                <li>Developed Inventory and Investment management system with customized business rules in fullstack Django</li>
+                <li>Built an insurance claims management system using fullstack Django with PostgreSQL and Celery</li>
+                <li>Integrated AWS services (EC2, RDS, VPC, ELB, WAF) for deployment and security</li>
               </ul>
             </div>
           </div>
@@ -249,7 +253,7 @@
             <h3>Languages</h3>
             <div class="skill-tags">
               <span class="skill-tag">Python</span>
-              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">JavaScript/NodeJS</span>
               <span class="skill-tag">Go</span>
               <span class="skill-tag">Java</span>
             </div>
@@ -262,6 +266,7 @@
               <span class="skill-tag">Django Ninja</span>
               <span class="skill-tag">FastAPI</span>
               <span class="skill-tag">NestJS</span>
+              <span class="skill-tag">Celery</span>
             </div>
           </div>
           <div class="skill-card animate-on-scroll">
@@ -277,6 +282,8 @@
               <span class="skill-tag">PostgreSQL</span>
               <span class="skill-tag">MySQL</span>
               <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Redis</span>
+              <span class="skill-tag">ElasticSearch</span>
             </div>
           </div>
           <div class="skill-card animate-on-scroll">
@@ -286,6 +293,10 @@
               <span class="skill-tag">GCP</span>
               <span class="skill-tag">Digital Ocean</span>
               <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">AWS CDK</span>
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">Kafka</span>
             </div>
           </div>
           <div class="skill-card animate-on-scroll">
@@ -298,8 +309,17 @@
               <span class="skill-tag">Transfer Learning</span>
               <span class="skill-tag">YOLO</span>
               <span class="skill-tag">FaceNet</span>
+              <span class="skill-tag">OpenAI</span>
               <span class="skill-tag">Google Colab</span>
               <span class="skill-tag">Vertex AI</span>
+            </div>
+          </div>
+          <div class="skill-card animate-on-scroll">
+            <h3>Practices</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Agile Methodologies</span>
+              <span class="skill-tag">Test-Driven Development</span>
+              <span class="skill-tag">CI/CD</span>
             </div>
           </div>
         </div>
@@ -317,12 +337,13 @@
               <span class="project-badge project-badge--live">Live</span>
             </div>
             <span class="project-role">Full Stack Developer</span>
-            <p class="project-desc">Full-stack search platform with intelligent data enrichment capabilities. Led development as Full Stack Developer.</p>
+            <p class="project-desc">Dynamic content search and onboarding platform for Banglalink. Built with FastAPI, Elasticsearch, and OpenAI for AI-based content enrichment. Includes a React CMS for content management.</p>
             <div class="project-tags">
-              <span class="project-tag">React</span>
               <span class="project-tag">FastAPI</span>
+              <span class="project-tag">Elasticsearch</span>
+              <span class="project-tag">OpenAI</span>
+              <span class="project-tag">React</span>
               <span class="project-tag">Python</span>
-              <span class="project-tag">LLM</span>
             </div>
           </div>
           <div class="project-card animate-on-scroll">
@@ -331,23 +352,45 @@
               <span class="project-badge project-badge--live">Live</span>
             </div>
             <span class="project-role">Backend Lead</span>
-            <p class="project-desc">Mobile app backend for Banglalink's power and wallet services. Led the backend team for development and delivery.</p>
+            <p class="project-desc">Retailer-focused airtime sales platform with campaigns, offers, and commission management. Architected and led backend development with integrations to Paywall Plus, IAM, BL Wallet, BL Recharge, and SMS services.</p>
             <div class="project-tags">
               <span class="project-tag">DRF</span>
               <span class="project-tag">Django Ninja</span>
-              <span class="project-tag">Python</span>
+              <span class="project-tag">Celery</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">RabbitMQ</span>
+              <span class="project-tag">Redis</span>
+              <span class="project-tag">Docker</span>
             </div>
           </div>
           <div class="project-card animate-on-scroll">
             <div class="project-header">
-              <h3>MyBL</h3>
+              <h3>BL Wallet</h3>
+              <span class="project-badge project-badge--live">Live</span>
+            </div>
+            <span class="project-role">Backend Lead</span>
+            <p class="project-desc">Centralized wallet service for fault-tolerant transaction handling across all Banglalink services. Master-slave MySQL with RabbitMQ and Celery for reliable processing.</p>
+            <div class="project-tags">
+              <span class="project-tag">Django Ninja</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">RabbitMQ</span>
+              <span class="project-tag">Celery</span>
+              <span class="project-tag">Docker</span>
+            </div>
+          </div>
+          <div class="project-card animate-on-scroll">
+            <div class="project-header">
+              <h3>BL Backend Utilities</h3>
               <span class="project-badge project-badge--live">Live</span>
             </div>
             <span class="project-role">Backend Developer</span>
-            <p class="project-desc">Contributed to Banglalink's flagship customer-facing mobile application backend.</p>
+            <p class="project-desc">Suite of backend utilities including ETL pipelines, Notification Engine (Kafka + CleverTap), Object Uploader, and data migration tools. Migrated 40M records in 1 hour, reducing DB from 460GB to 30GB.</p>
             <div class="project-tags">
-              <span class="project-tag">Django</span>
-              <span class="project-tag">Python</span>
+              <span class="project-tag">FastAPI</span>
+              <span class="project-tag">Kafka</span>
+              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">Kubernetes</span>
             </div>
           </div>
           <div class="project-card animate-on-scroll">
@@ -402,6 +445,7 @@
             <span class="education-location">Dhaka, Bangladesh</span>
             <p class="education-degree">BSc in Computer Science & Engineering</p>
             <p class="education-year">Graduated 2022</p>
+            <p class="education-honors">Highest Distinction | VC's List | Dean's List</p>
           </div>
           <div class="education-stats">
             <div class="education-stat">
@@ -410,7 +454,7 @@
             </div>
             <div class="education-stat">
               <span class="education-stat-label">Scholarship</span>
-              <span class="education-stat-value">Merit-Based</span>
+              <span class="education-stat-value">Merit-Based (Throughout)</span>
             </div>
             <div class="education-stat">
               <span class="education-stat-label">Student Tutor</span>
@@ -481,8 +525,26 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
             </div>
             <div class="leadership-content">
-              <h3>ACMP Certified</h3>
-              <p>Associate Certified Management Professional from IBA, Dhaka University</p>
+              <h3>ACMP 4.0 Certified</h3>
+              <p>Associate Certified Management Professional — IBA, Dhaka University (2025)</p>
+            </div>
+          </div>
+          <div class="leadership-card animate-on-scroll">
+            <div class="leadership-icon" style="background-color: #fef3c7; color: #d97706;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <div class="leadership-content">
+              <h3>AWS Machine Learning Foundations</h3>
+              <p>Udacity (2022)</p>
+            </div>
+          </div>
+          <div class="leadership-card animate-on-scroll">
+            <div class="leadership-icon" style="background-color: #dbeafe; color: #2563eb;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <div class="leadership-content">
+              <h3>Machine Learning on Google Cloud</h3>
+              <p>Coursera (2022)</p>
             </div>
           </div>
         </div>

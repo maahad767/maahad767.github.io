@@ -831,6 +831,13 @@ ul {
   color: var(--color-text-light);
 }
 
+.education-honors {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-top: 0.5rem;
+}
+
 .education-stats {
   display: flex;
   flex-wrap: wrap;

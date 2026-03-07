@@ -15,6 +15,7 @@
       <p class="title">Senior Software Engineer</p>
       <p class="contact">
         <span>maahad.767@gmail.com</span>
+        <span>+880 1828-442772</span>
         <span>github.com/maahad767</span>
         <span>linkedin.com/in/maahad767</span>
         <span>Dhaka, Bangladesh</span>
@@ -31,12 +32,13 @@
     <section class="resume-section skills">
       <h2>Technical Skills</h2>
       <ul class="skills-list">
-        <li><strong>Languages:</strong> Python, JavaScript, Go, Java</li>
-        <li><strong>Backend:</strong> Django, Django REST Framework, Django Ninja, FastAPI, NestJS</li>
+        <li><strong>Languages:</strong> Python, JavaScript/NodeJS, Go, Java</li>
+        <li><strong>Backend:</strong> Django, Django REST Framework, Django Ninja, FastAPI, NestJS, Celery</li>
         <li><strong>Frontend:</strong> React, Vanilla JavaScript</li>
-        <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB</li>
-        <li><strong>Cloud &amp; DevOps:</strong> AWS, GCP, Digital Ocean, Docker</li>
-        <li><strong>AI/ML:</strong> Pandas, Scikit-learn, Deep Learning, LLM Tools, YOLO, FaceNet, Google Colab, Vertex AI</li>
+        <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Redis, ElasticSearch</li>
+        <li><strong>Cloud &amp; DevOps:</strong> AWS, GCP, Digital Ocean, Docker, Kubernetes, AWS CDK, GitHub Actions, Kafka</li>
+        <li><strong>AI/ML:</strong> Pandas, Scikit-learn, Deep Learning, LLM Tools, OpenAI, YOLO, FaceNet, Google Colab, Vertex AI</li>
+        <li><strong>Practices:</strong> Agile Methodologies, Test-Driven Development, CI/CD</li>
       </ul>
     </section>
 
@@ -50,11 +52,12 @@
         <p class="role-line"><span class="role-title">Software Engineer</span> <span class="role-date">Jan 2024 — Jun 2024</span></p>
         <p class="role-line"><span class="role-title">Associate Software Engineer</span> <span class="role-date">May 2022 — Dec 2023</span></p>
         <ul>
-          <li>Led backend team for Searchify (React + FastAPI) and Banglalink Power (DRF + Django Ninja), both live with growing user bases</li>
+          <li>Designed architecture and led backend team for BL Power — retailer-focused airtime sales platform with campaigns, offers, and commission management using DRF, MySQL, RabbitMQ, Redis, and Docker</li>
+          <li>Developed BL Wallet — centralized, fault-tolerant wallet service using Django Ninja with master-slave MySQL, RabbitMQ, and Celery</li>
+          <li>Built BL Backend Utilities Suite: ETL pipelines, Notification Engine (Kafka + CleverTap), Object Uploader (FastAPI + S3), Profile Image Migrator (40M records in 1hr, 460GB→30GB), User Base Uploader (6hrs→15min)</li>
+          <li>Designed Searchify — dynamic content search platform using FastAPI, Elasticsearch, OpenAI, and React CMS</li>
           <li>Selected as Employee of the Quarter in 2024 for outstanding contribution and leadership</li>
-          <li>Developed AI/ML POCs: eKYC Verification, Bangla Speech Generation, LLM-based Data Enrichment</li>
-          <li>Built automated data processing pipelines and reporting tools using Pandas</li>
-          <li>Contributed to MyBL app, JIC (fullstack Django), Tracker23 (NestJS), and Miza Fintech (DRF)</li>
+          <li>Contributed to JIC (Django, Celery, AWS), Tracker23 (NestJS, PostgreSQL, Prisma), and Miza Fintech (DRF)</li>
         </ul>
       </article>
 
@@ -70,7 +73,8 @@
         <p class="company">DevsCore <span class="location">— Remote (Contract)</span></p>
         <p class="role-line"><span class="role-title">Senior Software Engineer</span></p>
         <ul>
-          <li>Developed IAB (Institute of Architects, Bangladesh) portal backend using Django Ninja</li>
+          <li>Designed architecture, database schema, and APIs for IAB (Institute of Architects, Bangladesh) portal using Django Ninja</li>
+          <li>Implemented CI/CD with GitHub Actions, integrated Odoo for accounting and AmarPay for payments</li>
         </ul>
       </article>
 
@@ -86,7 +90,8 @@
         <p class="company">Makebell <span class="location">— Remote (Hong Kong, China)</span></p>
         <p class="role-line"><span class="role-title">Software Engineer</span> <span class="role-date">Sep 2021 — Apr 2022</span></p>
         <ul>
-          <li>Migrated Riciwawa app backend to Django REST Framework and Google Cloud Platform</li>
+          <li>Developed backend for Ricciwawa — social media app for Chinese learning with auto-caption, speech-to-text, text-to-speech, and video-to-audio</li>
+          <li>Built from scratch using DRF with GCP services (GAE, Cloud SQL, Speech API, Cloud Storage) and Elastic Search</li>
           <li>Recognized with performance bonus for exceeding expectations</li>
         </ul>
       </article>
@@ -95,7 +100,8 @@
         <p class="company">Tickets4Travel <span class="location">— Dhaka, Bangladesh</span></p>
         <p class="role-line"><span class="role-title">Junior Software Engineer</span> <span class="role-date">Apr 2021 — Sep 2021</span></p>
         <ul>
-          <li>Built ride sharing application backend using DRF, Django Channels 3, AWS, PostgreSQL, and Redis</li>
+          <li>Designed backend architecture for ridesharing system using DRF and Django Channels with geometric DB queries</li>
+          <li>Implemented custom ride-assigning algorithm and deployed on AWS (EC2, RDS)</li>
         </ul>
       </article>
 
@@ -103,30 +109,35 @@
         <p class="company">Digiden <span class="location">— Dhaka, Bangladesh</span></p>
         <p class="role-line"><span class="role-title">Intern Software Engineer</span> <span class="role-date">Nov 2020 — Apr 2021</span></p>
         <ul>
-          <li>Developed Inventory and Investment management system with custom business rules in fullstack Django</li>
+          <li>Built insurance claims management system using fullstack Django with PostgreSQL and Celery</li>
+          <li>Integrated AWS services (EC2, RDS, VPC, ELB, WAF) for deployment and security</li>
         </ul>
       </article>
 
     </section>
 
     <!-- Projects -->
-    <section class="resume-section projects">
+    <section class="resume-section projects page-break-before">
       <h2>Projects</h2>
       <ul class="projects-list">
-        <li><strong>Searchify</strong> — Full-stack search platform (React, FastAPI) | Full Stack Developer | Live</li>
-        <li><strong>Banglalink Power</strong> — Mobile app backend (DRF, Django Ninja) | Backend Lead | Live</li>
+        <li><strong>Searchify</strong> — Dynamic content search platform (FastAPI, Elasticsearch, OpenAI, React) | Full Stack Developer | Live</li>
+        <li><strong>BL Power</strong> — Retailer airtime sales platform (DRF, MySQL, RabbitMQ, Redis) | Backend Lead | Live</li>
+        <li><strong>BL Wallet</strong> — Centralized wallet service (Django Ninja, MySQL, RabbitMQ, Celery) | Backend Lead | Live</li>
+        <li><strong>BL Utilities Suite</strong> — ETL, Notification Engine, Data Migration tools (FastAPI, Kafka, MongoDB) | Developer | Live</li>
+        <li><strong>IAB Portal</strong> — Institute of Architects portal (Django Ninja, PostgreSQL, GitHub Actions) | Full Stack Developer</li>
         <li><strong>Alzheimer's AAL System</strong> — BSc Thesis: Ambient assisted living using YOLOv4/v7, FaceNet | Published</li>
       </ul>
     </section>
 
     <!-- Education (page 2) -->
-    <section class="resume-section education page-break-before">
+    <section class="resume-section education">
       <h2>Education</h2>
       <article class="education-entry">
         <p class="institution">BRAC University <span class="location">— Dhaka, Bangladesh</span></p>
         <p class="degree">BSc in Computer Science &amp; Engineering <span class="degree-date">Graduated 2022</span></p>
         <ul>
           <li>CGPA: 3.92 / 4.00 | Merit-based Scholarship</li>
+          <li>Highest Distinction | VC's List | Dean's List</li>
           <li>Thesis: "An Ambient Assisted Living System for Alzheimer's Patients"</li>
           <li>Student Tutor (Jun 2021 — May 2022)</li>
         </ul>
@@ -137,9 +148,12 @@
     <section class="resume-section mentorship">
       <h2>Mentorship &amp; Certifications</h2>
       <ul class="mentorship-list">
+        <li>ACMP 4.0 — Institute of Business Administration, Dhaka University (2025)</li>
+        <li>AWS Machine Learning Foundations — Udacity (2022)</li>
+        <li>Machine Learning on Google Cloud — Coursera (2022)</li>
+        <li>Managing Jira Projects for Cloud, Data Center — Atlassian (2023)</li>
         <li>Mentored multiple trainee batches at Brain Station 23 and Learnathon 3.0</li>
         <li>Guest Lecturer at BRAC University as industry expert</li>
-        <li>ACMP Certified — Institute of Business Administration (IBA), Dhaka University</li>
       </ul>
     </section>
 
