@@ -1,259 +1,87 @@
-/* resume.css — Print-optimized, ATS-friendly stylesheet */
+/* resume.css — Print-optimized, ATS-friendly, 2-page resume */
 
-/* ── Reset & Base ── */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
-  font-size: 10pt;
-  line-height: 1.4;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.35;
+  font-family: "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   color: #222;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
+body { margin: 0; padding: 0; }
 
-/* ── Page container ── */
-.resume {
-  width: 210mm;
-  min-height: 297mm;
-  margin: 0 auto;
-  padding: 15mm;
-}
+.resume { width: 210mm; margin: 0 auto; padding: 12mm 14mm; }
 
-/* ── Header ── */
+/* Header */
 .resume-header {
   text-align: center;
-  margin-bottom: 10pt;
-}
-
-.resume-header h1 {
-  font-size: 20pt;
-  font-weight: 700;
-  margin-bottom: 2pt;
-  color: #111;
-}
-
-.resume-header .title {
-  font-size: 12pt;
-  font-weight: 400;
-  margin-bottom: 4pt;
-  color: #333;
-}
-
-.resume-header .contact {
-  font-size: 9pt;
-  color: #444;
-}
-
-.resume-header .contact span + span::before {
-  content: " | ";
-}
-
-/* ── Sections ── */
-.resume-section {
-  margin-top: 10pt;
-}
-
-.resume-section h2 {
-  font-size: 12pt;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5pt;
-  border-bottom: 1pt solid #333;
-  padding-bottom: 2pt;
   margin-bottom: 6pt;
-  color: #111;
+  padding-bottom: 6pt;
+  border-bottom: 1.5pt solid #222;
+}
+.resume-header h1 { font-size: 18pt; font-weight: 700; margin-bottom: 1pt; color: #111; letter-spacing: 0.5pt; }
+.resume-header .title { font-size: 11pt; font-weight: 400; margin-bottom: 3pt; color: #333; }
+.resume-header .contact { font-size: 8.5pt; color: #444; line-height: 1.4; }
+.resume-header .contact span + span::before { content: " \00a0|\00a0 "; }
+
+/* Sections */
+.resume-section { margin-top: 6pt; }
+.resume-section h2 {
+  font-size: 9.5pt; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1pt; border-bottom: 0.75pt solid #555;
+  padding-bottom: 1.5pt; margin-bottom: 4pt; color: #111;
 }
 
-/* ── Summary ── */
-.summary p {
-  font-size: 10pt;
-  line-height: 1.4;
-}
+/* Summary */
+.summary p { font-size: 9pt; line-height: 1.35; }
 
-/* ── Skills ── */
-.skills-list {
-  list-style: none;
-  padding: 0;
-}
+/* Skills */
+.skills-list { list-style: none; padding: 0; }
+.skills-list li { font-size: 8.5pt; margin-bottom: 1pt; line-height: 1.35; }
+.skills-list li strong { font-weight: 700; }
 
-.skills-list li {
-  font-size: 10pt;
-  margin-bottom: 2pt;
-}
+/* Experience */
+.experience-entry { margin-bottom: 5pt; }
+.experience-entry .company { font-size: 9.5pt; font-weight: 700; color: #111; }
+.experience-entry .location { font-weight: 400; color: #444; font-size: 9pt; }
+.experience-entry .role-line { font-size: 9pt; margin-top: 0.5pt; }
+.experience-entry .role-title { font-style: italic; }
+.experience-entry .role-date { float: right; font-style: normal; color: #444; }
+.experience-entry ul { margin-top: 2pt; margin-left: 14pt; padding: 0; }
+.experience-entry ul li { font-size: 9pt; margin-bottom: 0.5pt; line-height: 1.3; }
 
-.skills-list li strong {
-  font-weight: 700;
-}
+/* Projects */
+.projects-list { list-style: none; padding: 0; }
+.projects-list li { font-size: 9pt; margin-bottom: 1.5pt; line-height: 1.3; }
 
-/* ── Experience ── */
-.experience-entry {
-  margin-bottom: 8pt;
-}
+/* Education */
+.education-entry { margin-bottom: 3pt; }
+.education-entry .institution { font-size: 9.5pt; font-weight: 700; color: #111; }
+.education-entry .degree { font-size: 9pt; font-style: italic; margin-top: 0.5pt; }
+.education-entry .degree-date { float: right; font-style: normal; color: #444; }
+.education-entry ul { margin-top: 2pt; margin-left: 14pt; padding: 0; }
+.education-entry ul li { font-size: 9pt; margin-bottom: 0.5pt; }
 
-.experience-entry .company {
-  font-size: 10pt;
-  font-weight: 700;
-  color: #111;
-}
+/* Certs & Mentorship */
+.cert-list, .mentorship-list { list-style: none; padding: 0; }
+.cert-list li, .mentorship-list li { font-size: 9pt; margin-bottom: 1pt; line-height: 1.3; }
 
-.experience-entry .location {
-  font-weight: 400;
-  color: #444;
-  font-size: 10pt;
-}
+/* Clearfix */
+.role-line::after, .degree::after { content: ""; display: table; clear: both; }
 
-.experience-entry .role-line {
-  font-size: 10pt;
-  margin-top: 1pt;
-}
-
-.experience-entry .role-title {
-  font-style: italic;
-}
-
-.experience-entry .role-date {
-  float: right;
-  font-style: normal;
-  color: #444;
-}
-
-.experience-entry ul {
-  margin-top: 3pt;
-  margin-left: 16pt;
-  padding: 0;
-}
-
-.experience-entry ul li {
-  font-size: 10pt;
-  margin-bottom: 1pt;
-}
-
-/* ── Projects ── */
-.projects-list {
-  list-style: disc;
-  margin-left: 16pt;
-  padding: 0;
-}
-
-.projects-list li {
-  font-size: 10pt;
-  margin-bottom: 2pt;
-}
-
-/* ── Education ── */
-.education-entry {
-  margin-bottom: 4pt;
-}
-
-.education-entry .institution {
-  font-size: 10pt;
-  font-weight: 700;
-  color: #111;
-}
-
-.education-entry .degree {
-  font-size: 10pt;
-  font-style: italic;
-  margin-top: 1pt;
-}
-
-.education-entry .degree-date {
-  float: right;
-  font-style: normal;
-  color: #444;
-}
-
-.education-entry ul {
-  margin-top: 2pt;
-  margin-left: 16pt;
-  padding: 0;
-}
-
-.education-entry ul li {
-  font-size: 10pt;
-  margin-bottom: 1pt;
-}
-
-/* ── Mentorship & Certifications ── */
-.mentorship-list {
-  list-style: disc;
-  margin-left: 16pt;
-  padding: 0;
-}
-
-.mentorship-list li {
-  font-size: 10pt;
-  margin-bottom: 2pt;
-}
-
-/* ── Clearfix for floats ── */
-.role-line::after,
-.degree::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* ── Screen-only styles ── */
+/* Screen */
 @media screen {
-  body {
-    background: #e8e8e8;
-    padding: 20px 0;
-  }
-
-  .resume {
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    margin: 20px auto;
-  }
+  body { background: #e0e0e0; padding: 20px 0; }
+  .resume { background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.2); margin: 20px auto; }
 }
 
-/* ── Print styles ── */
+/* Print */
 @media print {
-  html {
-    font-size: 10pt;
-  }
-
-  body {
-    background: none;
-  }
-
-  .resume {
-    width: auto;
-    min-height: auto;
-    margin: 0;
-    padding: 0;
-    box-shadow: none;
-  }
-
-  @page {
-    size: A4;
-    margin: 15mm;
-  }
-
-  /* Prevent breaking inside entries */
-  .experience-entry,
-  .education-entry {
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-
-  /* Page break before Education to create 2-page layout */
-  .page-break-before {
-    page-break-before: always;
-    break-before: always;
-  }
-
-  a {
-    color: #222;
-    text-decoration: none;
-  }
+  html { font-size: 9.5pt; }
+  body { background: none; }
+  .resume { width: auto; min-height: auto; margin: 0; padding: 0; box-shadow: none; }
+  @page { size: A4; margin: 12mm 14mm; }
+  .experience-entry, .education-entry { page-break-inside: avoid; break-inside: avoid; }
+  a { color: #222; text-decoration: none; }
 }
