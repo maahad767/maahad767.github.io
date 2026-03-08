@@ -67,9 +67,16 @@ body { margin: 0; padding: 0; }
 .education-entry ul { margin-top: 2pt; margin-left: 14pt; padding: 0; }
 .education-entry ul li { font-size: 8.5pt; margin-bottom: 0.5pt; }
 
-/* Certs & Mentorship */
-.cert-list, .mentorship-list { list-style: none; padding: 0; }
-.cert-list li, .mentorship-list li { font-size: 8.5pt; margin-bottom: 1pt; line-height: 1.3; }
+/* Page break */
+.page-break-before { page-break-before: always; break-before: page; }
+
+/* Certs & Mentorship — two-column grid */
+.certs-grid { display: flex; gap: 20pt; }
+.certs-col { flex: 1; }
+.certs-subhead { font-size: 8.5pt; font-weight: 700; color: #333; text-transform: uppercase; letter-spacing: 0.5pt; margin-bottom: 3pt; }
+.cert-list { list-style: none; padding: 0; }
+.cert-list li { font-size: 8.5pt; margin-bottom: 2pt; line-height: 1.3; padding-left: 8pt; position: relative; }
+.cert-list li::before { content: "\2022"; position: absolute; left: 0; color: #555; }
 
 /* Clearfix */
 .role-line::after, .degree::after { content: ""; display: table; clear: both; }
