@@ -22,8 +22,10 @@ body { margin: 0; padding: 0; }
 }
 .resume-header h1 { font-size: 18pt; font-weight: 700; margin-bottom: 1pt; color: #111; letter-spacing: 0.5pt; }
 .resume-header .title { font-size: 11pt; font-weight: 400; margin-bottom: 3pt; color: #333; }
-.resume-header .contact { font-size: 8.5pt; color: #444; line-height: 1.4; }
+.resume-header .contact { font-size: 8.5pt; color: #222; line-height: 1.4; }
 .resume-header .contact span + span::before { content: " \00a0|\00a0 "; }
+.resume-header .links { font-size: 8.5pt; color: #444; line-height: 1.4; margin-top: 1pt; }
+.resume-header .links span + span::before { content: " \00a0|\00a0 "; }
 
 /* Sections */
 .resume-section { margin-top: 6pt; }
