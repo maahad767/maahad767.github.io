@@ -38,11 +38,10 @@ body { margin: 0; padding: 0; }
 /* Summary */
 .summary p { font-size: 9pt; line-height: 1.35; }
 
-/* Skills Table */
-.skills-table { width: 100%; border-collapse: collapse; font-size: 8.5pt; line-height: 1.35; }
-.skills-table td { padding: 0.5pt 0; vertical-align: top; }
-.skills-table td:first-child { width: 62%; }
-.skills-table td strong { font-weight: 700; }
+/* Skills */
+.skills-list { list-style: none; padding: 0; }
+.skills-list li { font-size: 8.5pt; margin-bottom: 1pt; line-height: 1.35; }
+.skills-list li strong { font-weight: 700; }
 
 /* Experience */
 .experience-entry { margin-bottom: 5pt; }

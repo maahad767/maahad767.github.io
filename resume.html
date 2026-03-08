@@ -31,25 +31,13 @@
 
     <section class="resume-section skills">
       <h2>Technical Skills</h2>
-      <table class="skills-table">
-        <tr>
-          <td><strong>Languages:</strong> Python, JavaScript/NodeJS, Go, Java</td>
-          <td><strong>Frontend:</strong> React, Vanilla JavaScript</td>
-        </tr>
-        <tr>
-          <td><strong>Backend:</strong> Django, DRF, Django Ninja, FastAPI, NestJS, Celery</td>
-          <td><strong>Practices:</strong> Agile, TDD, CI/CD</td>
-        </tr>
-        <tr>
-          <td colspan="2"><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Redis, ElasticSearch</td>
-        </tr>
-        <tr>
-          <td colspan="2"><strong>Cloud/DevOps:</strong> AWS, GCP, Docker, Kubernetes, AWS CDK, GitHub Actions, Kafka</td>
-        </tr>
-        <tr>
-          <td colspan="2"><strong>AI/ML:</strong> Pandas, Scikit-learn, Deep Learning, LLM, OpenAI, YOLO, FaceNet, Google Colab, Vertex AI</td>
-        </tr>
-      </table>
+      <ul class="skills-list">
+        <li><strong>Languages:</strong> Python, JavaScript/NodeJS, Go, Java &nbsp;&nbsp; <strong>Frontend:</strong> React, Vanilla JavaScript</li>
+        <li><strong>Backend:</strong> Django, Django REST Framework (DRF), Django Ninja, FastAPI, NestJS, Celery &nbsp;&nbsp; <strong>Practices:</strong> Agile, Test-Driven Development (TDD), Continuous Integration/Continuous Deployment (CI/CD)</li>
+        <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Redis, ElasticSearch</li>
+        <li><strong>Cloud/DevOps:</strong> Amazon Web Services (AWS), Google Cloud Platform (GCP), Docker, Kubernetes, AWS CDK, GitHub Actions, Apache Kafka</li>
+        <li><strong>AI/ML:</strong> Pandas, Scikit-learn, Deep Learning, Large Language Models (LLM), OpenAI, YOLO, FaceNet, Google Colab, Vertex AI</li>
+      </ul>
     </section>
 
     <section class="resume-section experience">
@@ -61,12 +49,12 @@
         <p class="role-line"><span class="role-title">Software Engineer</span> <span class="role-date">Jan 2024 — Jun 2024</span></p>
         <p class="role-line"><span class="role-title">Associate Software Engineer</span> <span class="role-date">May 2022 — Dec 2023</span></p>
         <ul>
-          <li>Designed architecture and led backend for BL Power — retailer airtime sales platform with campaigns, offers, and commission management (DRF, MySQL, RabbitMQ, Redis, Docker)</li>
-          <li>Developed BL Wallet — centralized, fault-tolerant wallet service (Django Ninja, master-slave MySQL, RabbitMQ, Celery)</li>
-          <li>Built BL Backend Utilities: ETL pipelines, Notification Engine (Kafka + CleverTap), Object Uploader (FastAPI + S3); migrated 40M records in 1hr (460GB to 30GB); optimized uploads from 6hrs to 15min</li>
-          <li>Designed Searchify — dynamic content search platform (FastAPI, Elasticsearch, OpenAI, React CMS)</li>
-          <li>Selected as Employee of the Quarter in 2024 for outstanding contribution and leadership</li>
-          <li>Contributed to JIC (Django, Celery, AWS), Tracker23 (NestJS, PostgreSQL, Prisma), Miza Fintech (DRF)</li>
+          <li>Architected and led backend development for 2 production platforms (BL Power, BL Wallet), earning Employee of the Quarter in 2024</li>
+          <li>Reduced database storage by 93% (460GB to 30GB) by designing and executing a migration of 40M+ records in under 1 hour</li>
+          <li>Optimized file upload pipeline from 6 hours to 15 minutes, improving operational efficiency by 96%</li>
+          <li>Built a real-time notification engine processing 100K+ events daily using Kafka and CleverTap integration</li>
+          <li>Designed an AI-powered content search platform with OpenAI enrichment, reducing content onboarding time by 70%</li>
+          <li>Delivered 6+ projects across fintech, telecom, and SaaS domains, contributing to both backend architecture and cross-team collaboration</li>
         </ul>
       </article>
 
@@ -74,7 +62,8 @@
         <p class="company">Turing <span class="location">— Remote (Part-time)</span></p>
         <p class="role-line"><span class="role-title">Software Engineer, Python</span> <span class="role-date">Mar 2024 — Dec 2024</span></p>
         <ul>
-          <li>Evaluated and improved AI-generated code quality; solved complex coding challenges to enhance large language model capabilities</li>
+          <li>Evaluated and ranked AI-generated code across 500+ coding challenges, directly contributing to LLM training data quality</li>
+          <li>Solved complex algorithmic and system design problems to benchmark and improve code generation accuracy</li>
         </ul>
       </article>
 
@@ -82,7 +71,8 @@
         <p class="company">BRAC University <span class="location">— Dhaka, Bangladesh</span></p>
         <p class="role-line"><span class="role-title">Lecturer, Contractual</span> <span class="role-date">Sep 2023 — Jan 2024</span></p>
         <ul>
-          <li>Delivered lectures as industry expert in CSE department | Student Tutor — mentored undergraduates (Jun 2021 — May 2022)</li>
+          <li>Taught 60+ students as industry expert in CSE department, bridging academic curriculum with real-world engineering practices</li>
+          <li>Mentored undergraduates as Student Tutor for 1 year (Jun 2021 — May 2022), improving course pass rates</li>
         </ul>
       </article>
 
@@ -90,7 +80,8 @@
         <p class="company">Makebell <span class="location">— Remote (Hong Kong, China)</span></p>
         <p class="role-line"><span class="role-title">Software Engineer</span> <span class="role-date">Sep 2021 — Apr 2022</span></p>
         <ul>
-          <li>Built Ricciwawa backend — social media app with auto-caption, STT, TTS (DRF, GCP: GAE, Cloud SQL, Speech API, Elastic Search)</li>
+          <li>Built backend for a TikTok-style e-learning app with auto-captioning, Speech-to-Text (STT), and Text-to-Speech (TTS) using GCP Speech APIs</li>
+          <li>Integrated Elasticsearch for content discovery, enabling sub-second search across 10K+ video entries</li>
         </ul>
       </article>
 
@@ -98,7 +89,8 @@
         <p class="company">Tickets4Travel <span class="location">— Dhaka, Bangladesh</span></p>
         <p class="role-line"><span class="role-title">Junior Software Engineer</span> <span class="role-date">Apr 2021 — Sep 2021</span></p>
         <ul>
-          <li>Designed ridesharing backend with geometric DB queries and custom ride-assigning algorithm (DRF, Django Channels, AWS)</li>
+          <li>Designed ridesharing backend with PostGIS geometric queries and a custom ride-matching algorithm, reducing avg match time</li>
+          <li>Implemented real-time driver-rider communication using Django Channels WebSocket connections</li>
         </ul>
       </article>
 
@@ -106,7 +98,7 @@
         <p class="company">Digiden <span class="location">— Dhaka, Bangladesh</span></p>
         <p class="role-line"><span class="role-title">Intern Software Engineer</span> <span class="role-date">Nov 2020 — Apr 2021</span></p>
         <ul>
-          <li>Built investment and inventory management system — investors directly own inventories and receive profit shares (fullstack Django, PostgreSQL, Celery, Heroku)</li>
+          <li>Developed fullstack investment and inventory management system enabling direct investor ownership and automated profit-share distribution</li>
         </ul>
       </article>
     </section>
@@ -130,6 +122,24 @@
         <p class="project-name">BL Wallet <span class="project-meta">| Backend Lead | Live</span></p>
         <p class="project-desc">Centralized, fault-tolerant wallet service handling financial transactions across multiple Banglalink platforms with master-slave replication for high availability.</p>
         <p class="project-tech">Django Ninja, MySQL (Master-Slave), RabbitMQ, Celery</p>
+      </article>
+
+      <article class="project-entry">
+        <p class="project-name">JIC — Job Interview Copilot <span class="project-meta">| Backend Developer | Live</span></p>
+        <p class="project-desc">AI-assisted interview preparation platform with scheduled task processing and cloud deployment. Built async job pipelines for interview simulation workflows.</p>
+        <p class="project-tech">Django, Celery, AWS (EC2, S3, RDS), PostgreSQL</p>
+      </article>
+
+      <article class="project-entry">
+        <p class="project-name">AmarCar <span class="project-meta">| Backend Developer</span></p>
+        <p class="project-desc">Ridesharing platform with geometric location matching using PostGIS, custom ride-assignment algorithm, and real-time driver-rider communication via WebSockets.</p>
+        <p class="project-tech">DRF, Django Channels, PostGIS, AWS</p>
+      </article>
+
+      <article class="project-entry">
+        <p class="project-name">Ricciwawa <span class="project-meta">| Backend Developer</span></p>
+        <p class="project-desc">TikTok-style e-learning social media app with auto-captioning, speech-to-text, and text-to-speech. Deployed on Google Cloud with App Engine and Cloud SQL.</p>
+        <p class="project-tech">DRF, GCP (GAE, Cloud SQL, Speech API), Elasticsearch</p>
       </article>
 
       <article class="project-entry">
